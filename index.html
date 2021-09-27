@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Info</title>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+        />
+        <link
+        rel="stylesheet"
+        href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+        />
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+    <body>
+        <header>
+            <h1 class="row justify-content-center">Weather Dashboard</h1>
+        </header>
+        <div class="container col-12">
+            <div class="row">
+                <section class="col-2 ">
+                    <h2>Search for a City: </h2>
+                    <input id="city" class="col-12">
+                    <button class="col-12" id="search">Search</button>
+                    <hr class="line">
+                    <ul>
+
+                    </ul>
+                </section>
+                <section class="col-10 ">
+                    <div class="col" id="currentForecast">
+                        <h2><span id="currentCity">City</span></h2>
+                        <p>Temp: <span id="cityTemp"></span> &#8457;</p>
+                        <p>Wind: <span id="cityWind"></span> MPH</p>
+                        <p>Humidity: <span id="cityHumid"></span> %</p>
+                        <p>UV Index: <span id="cityUV"></span></p>
+                    </div>
+                    <br>
+                    <h3>5-day Forecast:</h3>
+                    <div class="row">
+                        <div class="card">
+                            <h4><span id="date">CurrentDate</span></h4>
+                            <p><span id="icon">temp</span></p>
+                            <p>Temp:<span id="Temp"></span>&#8457;</p>
+                            <p>Wind:<span id="Wind"></span></p>
+                            <p>Humidity:<span id="Humid"></span></p>
+                        </div>
+                        <div class="card">
+                            <h4><span id="date2">CurrentDate</span></h4>
+                            <p><span id="icon2">temp</span></p>
+                            <p>Temp:<span id="Temp2"></span></p>
+                            <p>Wind:<span id="Wind2"></span></p>
+                            <p>Humidity:<span id="Humid2"></span></p>
+                        </div>
+                        <div class="card">
+                            <h4><span id="date3">CurrentDate</span></h4>
+                            <p><span id="icon3">temp</span></p>
+                            <p>Temp:<span id="Temp3"></span></p>
+                            <p>Wind:<span id="Wind3"></span></p>
+                            <p>Humidity:<span id="Humid3"></span></p>
+                        </div>
+                        <div class="card">
+                            <h4><span id="date4">CurrentDate</span></h4>
+                            <p><span id="icon4">temp</span></p>
+                            <p>Temp:<span id="Temp4"></span></p>
+                            <p>Wind:<span id="Wind4"></span></p>
+                            <p>Humidity:<span id="Humid4"></span></p>
+                        </div>
+                        <div class="card">
+                            <h4><span id="date5">CurrentDate</span></h4>
+                            <p><span id="icon5">temp</span></p>
+                            <p>Temp:<span id="Temp5"></span></p>
+                            <p>Wind:<span id="Wind5"></span></p>
+                            <p>Humidity:<span id="Humid5"></span></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./script.js"></script>
+</html>
